@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="170" viewBox="0 0 900 170" font-family="Segoe UI, Roboto, Arial, sans-serif">
+  <rect width="900" height="170" rx="16" fill="#0f0f14" stroke="#2a2a35"/>
+  <g fill="#1a1a22" stroke="#3a3a4a">
+    <rect x="30" y="50" width="170" height="70" rx="14"/><rect x="250" y="50" width="170" height="70" rx="14"/>
+    <rect x="470" y="50" width="170" height="70" rx="14"/><rect x="690" y="50" width="180" height="70" rx="14"/>
+  </g>
+  <g fill="#e0e0ff" font-size="15" text-anchor="middle" font-weight="600">
+    <text x="115" y="82">Popup / Alarm</text><text x="335" y="82">cleanAll()</text>
+    <text x="555" y="82">history.deleteAll</text><text x="780" y="82">downloads.erase</text>
+  </g>
+  <g fill="#8888aa" font-size="12" text-anchor="middle">
+    <text x="115" y="104">Clean Now or timer</text><text x="335" y="104">one shared function</text>
+    <text x="555" y="104">browsing history</text><text x="780" y="104">records only, files safe</text>
+  </g>
+  <g stroke="#5a5aff" stroke-width="2.5" stroke-dasharray="8 6" fill="none" stroke-linecap="round">
+    <path d="M205 85H245"><animate attributeName="stroke-dashoffset" values="28;0" dur="1s" repeatCount="indefinite"/></path>
+    <path d="M425 85H465"><animate attributeName="stroke-dashoffset" values="28;0" dur="1s" repeatCount="indefinite"/></path>
+    <path d="M645 85H685"><animate attributeName="stroke-dashoffset" values="28;0" dur="1s" repeatCount="indefinite"/></path>
+  </g>
+  <circle r="5" fill="#90ff90" cy="85"><animate attributeName="cx" values="30;870" dur="4s" repeatCount="indefinite"/></circle>
+  <text x="450" y="150" text-anchor="middle" fill="#666680" font-size="12">chrome.alarms re-creates the schedule after every browser restart or service-worker wake-up</text>
+</svg>

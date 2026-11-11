@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a0a0f"/><stop offset="1" stop-color="#1a1a2e"/></linearGradient>
+    <linearGradient id="tx" x1="0" x2="1"><stop offset="0" stop-color="#e0e0ff"/><stop offset="1" stop-color="#a0a0ff"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="900" height="260" rx="20" fill="url(#bg)" stroke="#2a2a35"/>
+  <!-- drifting glow orbs -->
+  <circle cx="120" cy="130" r="70" fill="#5a5aff" opacity=".25" filter="url(#glow)">
+    <animate attributeName="cx" values="120;160;120" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="60" r="50" fill="#a0a0ff" opacity=".15" filter="url(#glow)">
+    <animate attributeName="cy" values="60;120;60" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <!-- logo tile -->
+  <g transform="translate(60 65)">
+    <rect width="130" height="130" rx="28" fill="#303042" stroke="#3a3a4a"/>
+    <g transform="translate(65 65) scale(3.4) translate(-12 -12)">
+      <!-- bin body -->
+      <path fill="#a0a0ff" d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12z"/>
+      <!-- lid, wiggles -->
+      <path fill="#a0a0ff" d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14z">
+        <animateTransform attributeName="transform" type="rotate" values="0 12 6;-14 5 6;0 12 6;0 12 6" keyTimes="0;.15;.3;1" dur="3s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <!-- falling bits -->
+    <circle cx="40" cy="20" r="3" fill="#90ff90"><animate attributeName="cy" values="10;70;70" keyTimes="0;.5;1" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;0" keyTimes="0;.5;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="90" cy="20" r="2.5" fill="#a0a0ff"><animate attributeName="cy" values="0;70;70" keyTimes="0;.6;1" dur="3s" begin=".8s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;0" keyTimes="0;.6;1" dur="3s" begin=".8s" repeatCount="indefinite"/></circle>
+  </g>
+  <!-- title -->
+  <text x="235" y="125" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="48" font-weight="600" fill="url(#tx)">History Cleaner
+    <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze"/>
+  </text>
+  <rect x="600" y="82" width="74" height="54" rx="14" fill="#5a5aff">
+    <animate attributeName="opacity" values=".7;1;.7" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="637" y="122" text-anchor="middle" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="38" font-weight="700" fill="#fff">V2</text>
+  <text x="237" y="165" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="20" fill="#8888aa">One click. Or fully automatic. Zero traces.</text>
+  <!-- scanning bar -->
+  <rect x="237" y="190" width="420" height="6" rx="3" fill="#2a2a35"/>
+  <rect x="237" y="190" width="90" height="6" rx="3" fill="#a0a0ff">
+    <animate attributeName="x" values="237;567;237" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="237" y="226" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="14" fill="#666680">Chrome Extension · Manifest V3 · Vanilla JS</text>
+</svg>
